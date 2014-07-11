@@ -15,7 +15,7 @@ public class VCFeatureDemo extends JPanel
     
     protected static JFrame frame;
     
-    String[] options = {"User sorting"};
+    String[] options = {"User sorting", "Score function definition"};
     JList<String> lstOptions;    
     DefaultListModel<String> listModel;
     JScrollPane scrList;     
@@ -84,7 +84,9 @@ public class VCFeatureDemo extends JPanel
     public void showFeature() {
         String feature = lstOptions.getSelectedValue().toString();
         if (feature.equals(options[0])) {
-            new UserSort(6);
+            new UserSort();
+        } else if (feature.equals(options[1])) {
+            new UtilityFunction();
         }
     }
   

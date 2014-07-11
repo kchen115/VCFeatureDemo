@@ -18,11 +18,11 @@ public class UserSort extends JFrame implements ActionListener{
     DummyUserData userData;
     UserSortPanel display;
     
-    public UserSort(int numUsers) {
+    public UserSort() {
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.X_AXIS));
         
-        userData = new DummyUserData(numUsers, 5, 6);
+        userData = new DummyUserData(6, 5, 6);
         
         JPanel optPanel = new JPanel();
         optPanel.setLayout(new BoxLayout(optPanel, BoxLayout.Y_AXIS));
